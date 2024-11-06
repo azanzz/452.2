@@ -1,0 +1,347 @@
+/* Aaron */  
+body {  
+  font-family: Arial, sans-serif;  
+  margin: 0;  
+  padding: 0;  
+  background-color: #f4f4f4;  
+}  
+  .left-image {  
+              float: left; /* Float the image to the left */  
+              width: 150px; /* Custom image width */  
+              height: auto; /* Maintain the original aspect ratio of the image */  
+              margin-right: 10px; /* Add some spacing on the right side */  
+          }  
+  .header {  
+    background-color: lightgrey;  
+    text-align: center;  
+    padding: 20px;  
+  }  
+  .topnav {  
+    overflow: hidden;  
+    background-color: #333;  
+  }  
+  .topnav a {  
+    float: left;  
+    display: block;  
+    color: white;  
+    text-align: center;  
+    padding: 14px 16px;  
+    text-decoration: none;  
+  }  
+  .topnav a:hover {  
+    background-color: lightgrey;  
+    color: white;  
+  }  
+  .content-container {  
+    display: flex;  
+    justify-content: space-between;  
+    align-items: center;  
+    margin: 0 auto;  
+    max-width: 100%;  
+    background-color: #fff;  
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+    padding: 20px;  
+    border-radius: 8px;  
+}  
+    
+.text-box {  
+  width: 40%;  
+  padding-left: 20px;  
+}  
+
+  
+.text-box h2 {  
+  color: #333;  
+  margin-top: 0;  
+}  
+    
+  /* paragraph style */  
+  .welcome-paragraph {  
+    color: #666;  
+    line-height: 1.6;  
+    margin-bottom: 15px;  
+}  
+
+.photo-with-description-container {  
+  display: flex;  
+  flex-wrap: wrap; /* Allow child elements to wrap when necessary, but it is usually not necessary in this layout */  
+}  
+  
+.description {  
+  flex: 1; /* Let the description occupy a portion of the width of the container */  
+  padding: 20px; /* Add inner margins to increase readability */  
+  box-sizing: border-box; /* Ensure that the margin does not increase the total width of the element */  
+  background-color: #f9f9f9; /* Optional, add background color to the description to distinguish it */  
+}  
+  
+.contact-section {  
+  flex: 2; /* Let the contact section occupy most of the width of the container */  
+  display: flex;  
+  flex-direction: column; /* Stack contact info and contact form vertically */  
+  padding: 20px; /* Add inner margin */  
+  box-sizing: border-box;  
+  background-color: #e9e9e9; /* Optionally, add a background color to the contact section to distinguish it */  
+}  
+  
+.contact-info, .contact-form {  
+  padding-bottom: 20px; /* Add some space below each section to create a separation between them */  
+}  
+  
+/* Optional style adjustments */  
+.support-flowchart-title, .contact-section h3 {  
+  color: #333; /* Set title color */  
+}  
+  
+.service-flowchart-image {  
+  max-width: 100%; /* Ensure that the image does not exceed the width of its container */  
+  height: auto; /* Maintain the aspect ratio of the image */  
+}  
+  
+form div {  
+  margin-bottom: 10px; /* Add some space below each field in the form */  
+}  
+  
+form label {  
+  display: block; /* Let the label occupy a separate line */  
+  margin-bottom: 5px; /* Add some space between tags and input boxes */  
+}  
+  
+form input[type="text"], form input[type="email"], form textarea {  
+  width: 100%; /* Let the input box and text area occupy the entire width of their parent container */  
+  padding: 8px; /* Add inner margins to increase readability */  
+  box-sizing: border-box; /* Ensure that the margin does not increase the total width of the element */  
+}  
+  
+form input[type="submit"] {  
+  background-color: #4CAF50; /* Set the background color for the submit button */  
+  color: white; /* Set the text color for the submit button */  
+  padding: 10px 20px; /* Add inner margins to increase button size */  
+  border: none; /* Remove the border of the button */  
+  cursor: pointer; /* Add pointer style when hovering over the mouse */  
+}  
+  
+form input[type="submit"]:hover {  
+  background-color: #45a049; /* Set the background color when hovering over the submit button */  
+}
+  
+.products {  
+  display: flex;  
+  justify-content: center;  
+  padding: 20px;  
+  background-color: #fff;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  flex-wrap: wrap; /* Allow project line breaks */  
+}  
+
+.product-item {  
+  margin: 10px;  
+  text-align: center;  
+  transition: transform 0.3s;  
+  flex: 1 1 calc(25% - 40px); /* Calculate the width using calc() and subtract the margin */  
+  max-width: calc(25% - 40px); /* Prevent excessive expansion on large screens */  
+  box-sizing: border-box; /* Ensure that padding and borders are included within the width */  
+}
+
+.product-item:hover {  
+  transform: scale(1.05);  
+}  
+
+.product-image {  
+  width: 200px;  
+  height: auto;  
+  border-radius: 10px;  
+}  
+
+.product-name {  
+  margin-top: 10px;  
+  padding: 10px 20px;  
+  background-color: #007bff;  
+  color: white;  
+  border: none;  
+  border-radius: 5px;  
+  cursor: pointer;  
+  font-size: 16px;  
+  transition: background-color 0.3s;  
+}  
+
+.product-name:hover {  
+  background-color: #0056b3;  
+}  
+
+/* Modal styles */  
+.product-modal {  
+  display: none; /* Hidden by default */  
+  position: fixed;  
+  z-index: 1000;  
+  left: 0;  
+  top: 0;  
+  width: 100%;  
+  height: 100%;  
+  overflow: auto;  
+  background-color: rgba(0,0,0,0.4); /* Black with opacity */  
+}  
+
+.product-modal-content {  
+  background-color: #fefefe;  
+  margin: 15% auto; /* 15% from the top and centered */  
+  padding: 20px;  
+  border: 1px solid #888;  
+  width: 80%; /* Could be more or less, depending on screen size */  
+  max-width: 600px;  
+  border-radius: 10px;  
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);  
+}  
+
+.close {  
+  color: #aaa;  
+  float: right;  
+  font-size: 28px;  
+  font-weight: bold;  
+  transition: color 0.3s;  
+}  
+
+.close:hover,  
+.close:focus {  
+  color: black;  
+  text-decoration: none;  
+  cursor: pointer;  
+}  
+
+.product-modal-content img {  
+  width: 100%;  
+  height: auto;  
+  border-radius: 10px 10px 0 0;  
+}  
+
+.product-modal-content h2 {  
+  margin-top: 0;  
+  color: #333;  
+}  
+
+.product-modal-content p {  
+  color: #666;  
+  line-height: 1.6;  
+}  
+
+/* Style for content container */  
+.content-container {  
+  display: flex;  
+  flex-wrap: wrap;  
+  margin: 20px;  
+  font-family: Arial, sans-serif;  
+  line-height: 1.6;  
+}  
+
+/* Styles for text box */  
+.text-box {  
+  flex: 3;  
+  padding: 20px;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+  background-color: #f9f9f9;  
+  border-radius: 8px;  
+}  
+
+/* Style for h2 tags */  
+.text-box h2 {  
+  color: #333;  
+  text-align: center;  
+  margin-bottom: 20px;  
+  font-size: 24px;  
+  font-weight: bold;  
+}  
+
+/* Style for blog page */  
+.blog-paragraph {  
+  margin-bottom: 20px;  
+  color: #555;  
+}  
+
+/* Styles for image box */  
+.image-box {  
+ width: 800px;  
+    height: auto;  
+    border-radius: 8px;  
+}  
+
+.image-box img {  
+  width: 800px;  
+  height: auto;  
+  border-radius: 8px;  
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  
+}  
+
+/* Style for paragraph headings (Industry Trends, Technology Assistance, etc.) */  
+.text-box .blog-paragraph:nth-of-type(2n+1) {  
+  font-weight: bold;  
+  font-size: 18px;  
+  color: #1a0dab;  
+  margin-top: 20px;  
+  margin-bottom: 10px;  
+}
+
+.text-box h2 {  
+  color: #333333; /* Set the font color to dark gray */  
+  font-family: 'Arial', sans-serif; /* Set the font to Arial*/  
+  font-size: 24px; /* Set font size to 24px */  
+  font-weight: bold; /* Set font bold */  
+  margin-bottom: 20px; /* Set the bottom outer margin to 20px */  
+  text-align: center; /* Set text centering alignment */  
+}  
+
+/* Beautify the p tags within the text box */  
+.text-box p {  
+  color: #666666; /* Set the font color to light gray */  
+  font-family: 'Verdana', sans-serif; /* Set the font to Verdana */  
+  font-size: 16px; /* Set font size to 16px */  
+  line-height: 1.5; /* Set the row height to 1.5 */  
+  margin-bottom: 15px; /* Set the bottom outer margin to 15px */  
+}  
+
+/* Beautify specific paragraphs within the text box, such as Introduction, Company History, Core values, etc */  
+.text-box p.about-paragraph:not(:first-of-type) {  
+  margin-top: 25px; /* Except for the first paragraph, the top margin of all other paragraphs is 25px */  
+  padding-left: 20px; /* Set the left margin to 20px */  
+  border-left: 4px solid #007BFF; /* Set the left border to a 4px wide blue solid line */  
+}  
+
+/* Beautify paragraph titles, such as Introduction, Company History, Core values, etc */  
+.text-box p.about-paragraph:contains('Introduction:'),  
+.text-box p.about-paragraph:contains('Company History::'),  
+.text-box p.about-paragraph:contains('Core values:'),  
+.text-box p.about-paragraph:contains('Social Responsibility and Sustainable Development:'),  
+.text-box p.about-paragraph:contains('ending:') {  
+  font-weight: bold; /* Set font bold */  
+  color: #007BFF; /* Set the font color to blue */  
+  margin-top: 30px; /* Set the top outer margin to 30px */  
+  padding-left: 0; /* Remove the left margin */  
+  border-left: none; /* Remove the left border */  
+}  
+
+/* Note: The contains pseudo class selector is not part of the CSS standard, so it is only used as an example here for illustration。  
+ In practical applications, you may need to use JavaScript or other methods to add additional classes for these specific paragraphs in order to apply styles。 */  
+
+/* Since 'contains' is not a valid CSS selector, you can replace it by adding specific classes, such as: */  
+.text-box p.title-paragraph {  
+  font-weight: bold; /* Set font bold */  
+  color: #007BFF; /* Set the font color to blue */  
+  margin-top: 30px; /* Set the top outer margin to 30px */  
+  padding-left: 0; /* Remove the left margin */  
+  border-left: none; /* Remove the left border */  
+} 
+  footer {  
+    background-color: #333; /* Footer background color */  
+    color: #fff; /* Text color */  
+    padding: 20px; /* Padding */  
+    text-align: center; /* Text alignment */  
+  }  
+    
+  footer a {  
+    color: #fff; /* Link color */  
+    text-decoration: none; /* Remove underline from links */  
+  }  
+    
+  footer a:hover {  
+    color: #ccc; /* Link color on hover */  
+    text-decoration: underline; /* Show underline on hover */  
+  }  
+ 

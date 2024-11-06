@@ -1,0 +1,182 @@
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+<meta charset="UTF-8">    
+<title>Product Portfolio</title>    
+<link rel="stylesheet" href="styles.css">
+</head>    
+<body>    
+    
+  <div class="header">
+    <img src="logo.png" alt="logo" class="left-image">  
+    <h1>Welcome to Australia Smart Choice </h1>   
+    <p>Here are our products </p> 
+  </div>   
+    
+  <div class="topnav">  
+    <a href="index.html">Home</a>  
+    <a href="support.html">Customer support</a>  
+    <a href="products.html">Product portfolio</a>
+    <a href="blog.html">Blog page</a> 
+    <a href="about.html">About Us</a>
+    <a href="location.html">Geographic location</a> 
+  </div> 
+    
+<div class="products">    
+  <!-- First product -->  
+  <div class="product-item">  
+    <img src="p1.png" alt="Product 1" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal1')">Lenovo ThinkBook 14+Ryzen Edition</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="p2.png" alt="Product 2" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal2')">Xiaomi Redmi Book Pro 14 2024</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="p3.png" alt="Product 3" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal3')">Lenovo ThinkBook 14+2024</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="p4.png" alt="Product 4" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal4')">Mechanical Revolution Boundless 15X Blizzard</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="p5.png" alt="Product 5" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal5')">Rainbow Hidden Star G1524</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="p6.png" alt="Product 6" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal6')">Lenovo Xiaoxin Pro 14</button>  
+  </div>  
+  <div class="product-item">  
+    <img src="p7.png" alt="Product 7" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal7')">Dell Achievement 3020 Desktop Computer</button>  
+  </div> 
+  <div class="product-item">  
+    <img src="p8.png" alt="Product 8" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal8')">Huawei MateStation S commercial office computer</button>  
+  </div> 
+  <div class="product-item">  
+    <img src="p9.png" alt="Product 9" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal9')">Kukai Skyworth Eight Core A9 Host</button>  
+  </div> 
+  <div class="product-item">  
+    <img src="p10.png" alt="Product 10" class="product-image">  
+    <button class="product-name" onclick="showModal('productModal10')">Lenovo Yangtian M4000q commercial office desktop computer</button>  
+  </div> 
+  <!-- More products can be added like this -->  
+</div>  
+  
+<!-- Modal box for the first product -->  
+<div id="productModal1" class="product-modal">  
+  <div class="product-modal-content">  
+    <span class="close" onclick="closeModal('productModal1')">&times;</span>
+    <img src="p1.png" alt="Product 1" class="product-image">  
+    <h2>Lenovo ThinkBook 14+Ryzen Edition</h2>                                   
+    <p>Designed specifically for business professionals, equipped with AMD Ryzen 7000 series standard voltage processors, 8-core 16 thread structure combined with 6nm process, capable of handling multiple tasks with ease. Equipped with 32GB DDR5 memory and 1TB SSD high-capacity hard drive, ensuring smooth operation and fast data reading and writing. The metal body and narrow bezel design combine portability and high screen to body ratio. The battery life can reach more than 10 hours, supporting fast charging, equipped with fingerprint recognition module and physical camera switch, ensuring privacy and security.</p>  
+    <!-- Add more detailed information about the product here -->  
+  </div>  
+</div> 
+<div id="productModal2" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal2')">&times;</span>
+      <img src="p2.png" alt="Product 2" class="product-image">  
+      <h2>Xiaomi Redmi Book Pro 14 2024</h2>                                     
+      <p>Equipped with Intel Core Ultra 5 series processors, 32GB LPDDR5 memory, and 1TB PCIe 4.0 SSD, it provides strong support for daily office work and professional creation. The 2.8K resolution and 120Hz refresh rate screen have won Dolby Vision certification, providing vivid and realistic visual effects. Lightweight design and multi device collaboration capabilities enhance work flexibility, making it suitable for outdoor work..</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div> 
+  <div id="productModal3" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal3')">&times;</span>
+      <img src="p3.png" alt="Product 3" class="product-image">  
+      <h2>Lenovo ThinkBook 14+2024</h2>                                      
+      <p>Equipped with Intel Core Ultra 5 processor, it integrates multiple AI applications such as intelligent conference assistant and automatic background blur function, providing convenient daily office support. The ultimate portability and high-resolution display ensure that users can maintain high work efficiency and comfort in any situation.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal4" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal4')">&times;</span>
+      <img src="p4.png" alt="Product 4" class="product-image">  
+      <h2>Mechanical Revolution Boundless 15X Blizzard</h2>                                      
+      <p>Equipped with AMD Ryzen 78845HS processor and NVIDIA GeForce RTX series discrete graphics card, it achieves a perfect integration of gaming and productivity. Whether it's daily office work or graphics intensive tasks, it can provide excellent performance. The battery can last up to 17 hours and is equipped with an excellent cooling system to safeguard high load tasks.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal5" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal5')">&times;</span>
+      <img src="p5.png" alt="Product 5" class="product-image">  
+      <h2>Rainbow Hidden Star G1524</h2>                                      
+      <p>Specially configured with the 12th generation Intel Core i5-12450H processor and NVIDIA GeForce RTX 3050 discrete graphics card, ensuring smooth and stable 3D game operation. Full HD IPS display with a refresh rate of up to 144Hz enhances the gaming experience. The efficient cooling system eliminates the need for players to worry about overheating after prolonged use.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal6" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal6')">&times;</span>
+      <img src="p6.png" alt="Product 6" class="product-image">  
+      <h2>Lenovo Xiaoxin Pro 14</h2>                                      
+      <p>A highly acclaimed ultrabook in the market, equipped with the 13th generation Intel Core i5 processor, balancing powerful performance and portability. The 1440p high-resolution screen and rich interface options meet the diverse needs of modern users, making it an all-in-one product.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal7" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal7')">&times;</span>
+      <img src="p7.png" alt="Product 7" class="product-image">  
+      <h2>Dell Achievement 3020 Desktop Computer</h2>                                      
+      <p>It adopts the latest Core 13 i5-13400 processor, equipped with 16GB memory and 512GB SSD+1TB storage space, and comes with a 23.8-inch large screen display. Provide an efficient and comfortable working environment for business professionals, enabling them to handle data analysis, graphics processing, and multitasking with ease.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal8" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal8')">&times;</span>
+      <img src="p8.png" alt="Product 8" class="product-image">  
+      <h2>Huawei MateStation S commercial office computer</h2>                                      
+      <p>Equipped with the 12th generation Core i5 processor, 16GB dual channel memory, and 1TB SSD hard drive, ensuring smooth and unobstructed multitasking. The monitor has a resolution of up to 1920x1080 pixels, providing a clear visual experience. Remote boot and super terminal functions make work more convenient and efficient. The whole machine adopts Intel platform certification and supports DDR4 3200MHz memory slots with a maximum capacity of 32GB.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal9" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal9')">&times;</span>
+      <img src="p9.png" alt="Product 9" class="product-image">  
+      <h2>Kukai Skyworth Eight Core A9 Host</h2>
+      <p>The AMD eight core processor paired with dual band WiFi technology, high-resolution display (1920x1080 pixels), and 256GB M.2 solid-state drive make it capable of handling various applications with ease. Suitable for business office and daily use.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  <div id="productModal10" class="product-modal">  
+    <div class="product-modal-content">  
+      <span class="close" onclick="closeModal('productModal10')">&times;</span>
+      <img src="p10.png" alt="Product 10" class="product-image">  
+      <h2>Lenovo Yangtian M4000q commercial office desktop computer</h2>                                      
+      <p>Equipped with a Core 13th generation i3-13100 processor, 16GB of memory, 512GB SSD, and a 23 inch display. Becoming an ideal choice for small and medium-sized enterprises and startups with stable performance and moderate prices. The simple appearance design and practical functional configuration can meet various daily office needs.</p>  
+      <!-- Add more detailed information about the product here -->  
+    </div>  
+  </div>
+  
+<script>  
+// Function for displaying modal boxes  
+function showModal(modalId) {  
+  var modal = document.getElementById(modalId);  
+  modal.style.display = "block";  
+}  
+  
+// Function to close modal boxes  
+function closeModal(modalId) {  
+  var modal = document.getElementById(modalId);  
+  modal.style.display = "none";  
+}  
+</script>
+
+<footer>  
+  <div class="footer-content">  
+  <p>Copyright &copy; Aaron</p>    
+</footer>  
+  
+</body>  
+</html>
